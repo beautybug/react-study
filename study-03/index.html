@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Study03</title>
+  <script src="../build/react.js"></script>
+  <script src="../build/react-dom.js"></script>
+  <script src="../build/browser.min.js"></script>
+</head>
+<body>
+  <div id="flower"></div>
+  <script type="text/babel">
+    let arr = [
+      <h1 key="1">花名：络石</h1>,
+      <h2 key="2">颜色：白色</h2>
+    ];
+    ReactDOM.render(
+      <div>{arr}</div>,
+      document.getElementById('flower')
+    );
+  </script>
+</body>
+</html>
