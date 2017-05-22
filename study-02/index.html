@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Study-02</title>
+  <script src="../build/react.js"></script>
+  <script src="../build/react-dom.js"></script>
+  <script src="../build/browser.min.js"></script>
+</head>
+<body>
+  <div id="flower">
+    <script type="text/babel">
+      let names = ['络石', '金丝桃', '海棠'];
+      ReactDOM.render(
+        <div>
+        {
+          names.map(function (name, index) {
+            return <div key={index}>{name} 超级好看！</div>
+          })
+        }
+        </div>,
+        document.getElementById('flower')
+      );
+    </script>
+  </div>
+</body>
+</html>
